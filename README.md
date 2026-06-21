@@ -1,72 +1,91 @@
-# 🎨 Custom Image GAN using PyTorch
+# 🎨 From Noise to Faces: Custom Image GAN using PyTorch
 
-> A Generative Adversarial Network (GAN) built with PyTorch for generating realistic images from a custom image dataset.
+> A Generative Adversarial Network (GAN) built from scratch using PyTorch to generate realistic human faces from random noise.
 
----
-
-## 🚀 Overview
-
-This project implements a **Generative Adversarial Network (GAN)** using **PyTorch**. The model consists of a **Generator** and a **Discriminator** trained in an adversarial manner to learn the underlying data distribution and generate realistic synthetic images.
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-GPU-orange)
 
 ---
 
-## ✨ Features
+## 🚀 Project Overview
 
-* 🔹 GAN implementation from scratch using PyTorch
-* 🔹 Custom Dataset and DataLoader pipeline
-* 🔹 Generator and Discriminator architectures
-* 🔹 Adversarial training process
-* 🔹 Synthetic image generation
-* 🔹 GPU support (CUDA)
+Generative Adversarial Networks (GANs) are one of the most exciting developments in Deep Learning. Instead of simply analyzing data, GANs learn to create entirely new content.
+
+This project trains two neural networks in an adversarial setting:
+
+🎨 **Generator** → Creates synthetic images from random noise.
+
+🕵️ **Discriminator** → Determines whether an image is real or generated.
+
+Through this competitive learning process, the Generator gradually learns to produce increasingly realistic images.
+
+---
+
+## ✨ Key Features
+
+✅ GAN implemented from scratch using PyTorch
+
+✅ Custom Dataset & DataLoader Pipeline
+
+✅ Adversarial Training Framework
+
+✅ Synthetic Face Generation
+
+✅ GPU-Accelerated Training with Google Colab
+
+✅ Training Progress Visualization
+
+---
+
+## 📈 Training Progress
+
+One of the most interesting aspects of this project is observing the model evolve:
+
+| Epoch 1      | Epoch 50              |
+| ------------ | --------------------- |
+| Random Noise | Realistic Human Faces |
+
+The Generator gradually learns meaningful visual patterns and produces increasingly realistic outputs.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Technology   | Purpose                 |
-| ------------ | ----------------------- |
-| Python       | Programming Language    |
-| PyTorch      | Deep Learning Framework |
-| Torchvision  | Image Processing        |
-| NumPy        | Numerical Computation   |
-| Pillow (PIL) | Image Handling          |
+| Technology   | Purpose                  |
+| ------------ | ------------------------ |
+| Python       | Core Programming         |
+| PyTorch      | Deep Learning Framework  |
+| Torchvision  | Image Processing         |
+| NumPy        | Numerical Computation    |
+| Matplotlib   | Visualization            |
+| Google Colab | GPU Training Environment |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-custom-image-gan/
+Image-Generation-with-GANs/
 │
 ├── vanillaGAN.ipynb
 ├── README.md
 └── .gitignore
 ```
 
----
-
-## 📊 Dataset
-
-The model is trained on a custom image dataset.
-
-> ⚠️ Dataset files are not included in this repository due to their large size.
-
----
-
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/Riyanshu-07/custom-image-gan.git
-cd custom-image-gan
+git clone https://github.com/Riyanshu-07/Image-Generation-with-GANs.git
 
-pip install torch torchvision numpy pillow
+cd Image-Generation-with-GANs
+
+pip install torch torchvision numpy matplotlib pillow
 ```
 
----
+## ▶️ Run the Project
 
-## ▶️ Usage
-
-Launch Jupyter Notebook:
+Open the notebook:
 
 ```bash
 jupyter notebook vanillaGAN.ipynb
@@ -74,22 +93,29 @@ jupyter notebook vanillaGAN.ipynb
 
 Run all cells to:
 
-* Load and preprocess the dataset
+* Load and preprocess images
 * Train the GAN
+* Monitor Generator & Discriminator losses
 * Generate synthetic images
-* Visualize generated samples
+* Visualize training progress
 
 ---
 
-## 🎯 Learning Outcomes
+## 🎯 What I Learned
 
-Through this project, I gained hands-on experience with:
+This project helped me gain practical experience in:
 
-* Generative Adversarial Networks (GANs)
-* Deep Learning using PyTorch
-* Image Generation and Synthesis
-* Custom Dataset Handling
-* Neural Network Training & Optimization
+🔹 Generative Adversarial Networks (GANs)
+
+🔹 Deep Learning using PyTorch
+
+🔹 Image Synthesis & Generation
+
+🔹 Dataset Preprocessing
+
+🔹 Neural Network Training & Optimization
+
+🔹 GPU-Based Training Workflows
 
 ---
 
@@ -97,18 +123,20 @@ Through this project, I gained hands-on experience with:
 
 * [ ] Implement DCGAN Architecture
 * [ ] Experiment with WGAN-GP
-* [ ] Improve Image Resolution
+* [ ] Improve Image Quality & Resolution
 * [ ] Add Model Checkpointing
-* [ ] Deploy as a Web Application
+* [ ] Build a Web-Based Demo
 
 ---
 
 ## 👨‍💻 Author
 
-**Riyanshu**
+### Riyanshu Kandwal
+
+AI/ML Enthusiast | Deep Learning Explorer | Open Source Contributor
 
 🔗 GitHub: https://github.com/Riyanshu-07
 
 ---
 
-⭐ If you found this project useful, consider starring the repository!
+⭐ If you found this project interesting, consider starring the repository and sharing your feedback!
